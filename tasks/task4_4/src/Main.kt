@@ -10,4 +10,19 @@ import com.github.ajalt.mordant.terminal.Terminal
 
 fun main(args: Array<String>) {
     // Add your code here
+    if (args.size != 3) {
+        println("Error: invalid argument count!")
+        exitProcess(1)
+    }
+
+    val initalTemp = args[0].toFloat()
+    val maximumTemp = args[1].toFloat()
+    val increment = args[2].toFloat()
+    var currentTemp = initalTemp
+
+    while (initalTemp < maximumTemp){
+        currentTemp += increment
+        println(currentTemp)
+    }
+
 }
