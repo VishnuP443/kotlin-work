@@ -10,7 +10,7 @@ fun main( args: Array<String>) {
     val stringOne = args[0]
     val stringTwo = args[1]
     
-    if ( anagrams(stringOne, stringTwo) ) {
+    if ( stringOne anagramOf stringTwo ) {
         println("$stringOne and $stringTwo are Anagrams!")
         exitProcess(0)
     }
