@@ -3,6 +3,7 @@
 import kotlin.text.*
 
 fun redact(document: String, redacting: String, redactionChar: Char = 'X'): String {
-    val newString = document.replace( redacting, redactionChar.toString().repeat(redacting.length) )
+    val redactionString = redactionChar.toString().repeat(redacting.length)
+    val newString = document.replace( redacting, redactionString )
     return newString
 }
