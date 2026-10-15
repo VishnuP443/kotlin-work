@@ -17,4 +17,25 @@ class MedianTest : FreeSpec({
     }
 
     // Write four more tests here
+    "List of size one" {
+        val floatList = listOf(12.0f)
+        median(floatList) shouldBe 12.0f
+    }
+    
+    "List of size two" {
+        val floatList = listOf(8.0f, 3.5f)
+        median(floatList) shouldBe 5.75f
+    }
+    
+    "List of size three" {
+        val floatList = listOf(8.0f, 3.5f, 7.6f)
+        median(floatList) shouldBe 3.5f
+    }
+    
+    "List of size four" {
+        val floatList = listOf(8.0f, 3.5f, 7.6f, 9.3f)
+        median(floatList) shouldBe 5.55f
+    } 
+
+    
 })
