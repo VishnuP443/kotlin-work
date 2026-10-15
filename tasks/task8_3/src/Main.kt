@@ -11,6 +11,7 @@ fun main(args: Array<String>) {
     }
     
     val recordList = fetchData( args[0] )    
-    val temperatureAverage =  recordList.map { it.second }.average()
+    val temperatureAverage = recordList.map { it.second }.average()
+    println("Average temperature: %.2f".format(temperatureAverage))
     
 }
