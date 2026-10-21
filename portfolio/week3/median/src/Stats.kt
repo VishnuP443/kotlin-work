@@ -9,14 +9,15 @@ fun median(numbers: List<Float>): Float{
     
     var result = 0.0f
     val middle = numbers.size / 2
+    val sortedNums = numbers.sorted()
     
     
     if (numbers.size % 2 == 0) {
-        result = (numbers[middle - 1] + numbers[middle]) / 2
+        result = (sortedNums[middle - 1] + sortedNums[middle]) / 2
     }
     
     else {
-        result = numbers[middle]
+        result = sortedNums[middle]
     }
     
     return result

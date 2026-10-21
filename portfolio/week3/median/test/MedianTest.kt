@@ -29,12 +29,12 @@ class MedianTest : FreeSpec({
     
     "List of size three" {
         val floatList = listOf(8.0f, 3.5f, 7.6f)
-        median(floatList) shouldBe 3.5f
+        median(floatList) shouldBe 7.6f
     }
     
     "List of size four" {
         val floatList = listOf(8.0f, 3.5f, 7.6f, 9.3f)
-        median(floatList) shouldBe 5.55f
+        median(floatList) shouldBe 7.8f
     } 
 
     
