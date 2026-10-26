@@ -24,17 +24,3 @@ fun median(numbers: List<Float>): Float{
     
 }
 
-
-// Tests that I checked
-
-// I have checked first on a list of size 1
-// since this is the lower bound for odd sized lists
-// Then I checked for the lower bound of even sized lists
-// excluding zero containing random values
-// as the median function should return an average of the
-// two values either side of the middle
-// after this I checked the general case past the lower bould
-// for odd sized lists with a list of size 3 with random values
-// as for this the middle index should be returned
-// And finally I tested the list of size 4 as this again is
-// past the lower bound for even sized lists
