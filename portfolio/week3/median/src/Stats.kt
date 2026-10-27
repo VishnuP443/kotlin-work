@@ -1,5 +1,4 @@
 // Task 7.7.1: statistics functions
-import kotlin.collections.*
 
 fun median(numbers: List<Float>): Float{
     

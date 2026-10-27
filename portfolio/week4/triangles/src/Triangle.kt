@@ -18,7 +18,6 @@ data class Triangle(val sideA: Double, val sideB: Double, val sideC: Double) {
         return (sideA < sideB + sideC && sideB < sideA + sideC && sideC < sideA + sideB)
     }
     
-    
     init {
         require(isValidTriangle() == true) {"Triangle is imaginary"}
         require(area > 1.0e-6) {"Area must be greater than 0"}
