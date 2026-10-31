@@ -11,5 +11,6 @@ class Picture {
         // Polymorphic behaviour here: Picture invokes draw on each shape
         // without needing to check exactly what type of shape it is
         it.draw(context)
+        
     }
 }
